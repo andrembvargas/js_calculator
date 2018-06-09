@@ -1,0 +1,70 @@
+body {
+	background-color: #27ae60;
+	color: white;
+	font-family: 'Varela Round', sans-serif;
+}
+input[type='number'] {
+	height: 44px;
+	width: 250px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+	border-radius: 25px; /*borda das caixas de texto*/
+	border: none;
+}
+button {
+	height: 40px;
+	width: 250px;
+	margin-top: 40px;
+	border-radius: 25px; /*borda dos botoes*/
+	border-style: solid;
+	border-color: white;
+	background-color: #27ae60;
+	color: white;
+}
+h2 {
+	margin-top: 25px;
+}
+.calculator {
+	margin-top: 230px;
+}
+button:hover { /* :hover adiciona efeitos de transição no 
+				botão quando passa o mouse por cima*/
+	background-color: #2c3e50;
+	cursor: pointer; /*o cursor do mouse muda quando 
+						passa por cima*/
+	transition: .2s; /*faz a transição de cor acontecer
+						aos poucos*/
+}
+input[type='radio'] {
+	display:none;
+}
+.operations input[type='radio']:checked + label {
+	/* Adicionar o estilo ao label selecionado */
+}
+label {
+	background: none;
+	border: 2px solid #fff;
+	cursor: pointer;
+	height: 35px;
+	margin: 0;
+	vertical-align: middle;
+	width: 35px;
+}
+/*botao selecionado troca de cor*/
+input[type='radio']:checked + label {
+	background: #2c3e50;
+}
+input[type='radio']:hover + label {
+	background: #34495e;
+	transition: .1s;
+}
+input[type='radio'] + label {
+	background-color: #CC000000;
+}
+.operations {
+	width: 180px;
+}
+.operation {
+	padding: 0;
+}
